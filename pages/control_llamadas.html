@@ -53,28 +53,53 @@
                         <div class="container-contact2">
                             <div class="wrap-contact2">
                                 <form class="contact2-form validate-form">
+                                    
                                     <span class="contact2-form-title">
-                                        Iniciar Sesión
+                                        Control de Llamadas
                                     </span>
-                
-                                    <div class="wrap-input2 validate-input" data-validate="Requiere el Usuario: ex@abc.xyz">
-                                        <input class="input2" type="text" name="user">
-                                        <span class="focus-input2" data-placeholder="Usuario"></span>
+
+                                    <div class="descripcion"><b>Codigo Llamada:</b></div>
+                                    <div class="valor" >
+                                        <input type="text" name="txtcodigoEmpleado" class="form-control" disabled>
                                     </div>
-                
-                                    <div class="wrap-input2 validate-input" data-validate = "Requiere de una contraseña">
-                                        <input class="input2" type="password" name="contrasenia">
-                                        <span class="focus-input2" data-placeholder="Contraseña"></span>
+
+                                    <div class="descripcion"><b>Fecha de Llamada:</b></div>
+                                    <div class="valor" >
+                                        <input type="date" name="txtfechallamada" class="form-control" >
                                     </div>
-                               
+
+                                    <div class="descripcion"><b>Número Llamadas Realizadas:</b></div>
+                                    <div class="valor"> <input type="text" name="txtNllamadas" class="form-control" placeholder="Cantidad Llamadas Realizadas"></div>
+                                
+                                    <div class="descripcion"><b>Observacion:</b></div>
+                                    <div class="valor">   <textarea id="txt-observacion" name="Observacion" rows="3" cols="40" class="form-control" placeholder="Observacion"></textarea></div>
+                        
+                                    <div class="descripcion"><b>Productor:</b></div>
+                                    <div class="valor">
+                                       <select class="form-control" name="cboUsuarios" >
+                                            <option value="-">Seleccione Productor</option>
+                                            <option value="0">1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">etc...</option>
+                                        </select>
+                                    </div>
+                                
+                                    <div class="descripcion"><b>Control:</b></div>
+                                        <div class="valor">
+                                            <select class="form-control" name="cboUsuarios" >
+                                                <option value="-">Seleccione tipo Control</option>
+                                                <option value="0">a</option>
+                                                <option value="1">b</option>
+                                                <option value="2">etc...</option>
+                                            </select>
+                                        </div>
+            
                                     <div class="container-contact2-form-btn">
                                         <div class="wrap-contact2-form-btn">
                                             <div class="contact2-form-bgbtn"></div>
-                                            <a href ="pruebas_navegacion.html">
-                                            <button  type="button"  class="contact2-form-btn" style="border-color: rgb(6, 26, 6)">
-                                                Iniciar Sesión
+                                            <button class="contact2-form-btn" style="border-color: rgb(6, 26, 6)">
+                                                Registrar
                                             </button>
-                                            </a>
                                         </div>
                                     </div>
                                 </form>
